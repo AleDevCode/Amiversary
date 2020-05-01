@@ -1,0 +1,51 @@
+.navbar-start {
+  margin: auto !important;
+}
+.navbar {
+  text-transform: uppercase;
+  background-color: #5f1989;
+}
+.navbar-item {
+  color: white;
+  font-family: "lexa", "arial", sans-serif;
+}
+.navbar-item:hover {
+  color: #5f1989 !important;
+  background-color: white !important;
+  font-family: "lexa", "arial", sans-serif;
+}
+.navbar-item :hover {
+  color: #5f1989 !important;
+  font-family: "lexa", "arial", sans-serif;
+}
+.navbar-link,
+.navbar-dropdown {
+  color: white;
+  font-family: "lexa", "arial", sans-serif;
+}
+.op {
+  color: #5f1989 !important;
+}
+.has-dropdown:active {
+  color: #5f1989 !important;
+}
+@media only screen and (max-width: 1024px) {
+  .navbar-item {
+    color: #5f1989;
+    font-family: "lexa", "arial", sans-serif;
+  }
+  .navbar-link,
+  .navbar-dropdown {
+    color: #5f1989;
+    font-family: "lexa", "arial", sans-serif;
+  }
+  .navbar-item:hover {
+    background-color: #5f1989 !important;
+    color: white !important;
+    font-family: "lexa", "arial", sans-serif;
+  }
+  .navbar-burger {
+    background: transparent;
+    color: white !important;
+  }
+}

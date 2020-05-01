@@ -1,0 +1,201 @@
+<div class="container">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-4">
+                    Dicen que los mejores momentos llegan cuando menos te lo esperas,
+                </h1>
+                <h2 class="subtitle">
+                    y eso es lo que sucedió con
+                    nuestro primer beso.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <a class="ir-arriba" (click) = "arriba()" title="Volver arriba">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+
+    <div class="grid-gallery">
+        <div class="images grid-gallery__item" *ngFor="let image of fotos1" (deferLoad)="image.show = true">
+
+            <ng-container *ngIf="image.show">
+                <img class="grid-gallery__image" src={{image.path}}>
+            </ng-container>
+        </div>
+
+    </div>
+
+
+    <section class="hero is-medium  is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Te amo sin saber cómo,
+                </h1>
+                <h2 class="subtitle">
+                    ni cuándo, ni de dónde
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-gallery">
+        <div class="images grid-gallery__item" *ngFor="let image of fotos2" (deferLoad)="image.show = true">
+
+            <ng-container *ngIf="image.show">
+                <img class="grid-gallery__image" src={{image.path}}>
+            </ng-container>
+        </div>
+
+    </div>
+
+
+    <section class="hero is-medium  is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    te amo directamente
+                </h1>
+                <h2 class="subtitle">
+                    sin problemas ni orgullo
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="grid-gallery">
+        <div class="images grid-gallery__item" *ngFor="let image of fotos3" (deferLoad)="image.show = true">
+
+            <ng-container *ngIf="image.show">
+                <img class="grid-gallery__image" src={{image.path}}>
+            </ng-container>
+        </div>
+
+    </div>
+
+
+    <section class="hero is-medium  is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    así te amo
+                </h1>
+                <h2 class="subtitle">
+                    porque no sé amar de otra manera,
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-gallery">
+        <div class="images grid-gallery__item" *ngFor="let image of fotos4" (deferLoad)="image.show = true">
+
+            <ng-container *ngIf="image.show">
+                <img class="grid-gallery__image" src={{image.path}}>
+            </ng-container>
+        </div>
+
+    </div>
+
+
+    <section class="hero is-medium  is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    sino así de este modo
+                </h1>
+                <h2 class="subtitle">
+                    en que no soy ni eres,
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="grid-gallery">
+        <div class="images grid-gallery__item" *ngFor="let image of fotos5" (deferLoad)="image.show = true">
+
+            <ng-container *ngIf="image.show">
+                <img class="grid-gallery__image" src={{image.path}}>
+            </ng-container>
+        </div>
+
+    </div>
+
+
+    <section class="hero is-medium  is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    tan cerca que tu mano
+                </h1>
+                <h2 class="subtitle">
+                    sobre mi pecho es mía,
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="grid-gallery">
+        <div class="images grid-gallery__item" *ngFor="let image of fotos6" (deferLoad)="image.show = true">
+
+            <ng-container *ngIf="image.show">
+                <img class="grid-gallery__image" src={{image.path}}>
+            </ng-container>
+        </div>
+
+    </div>
+
+    <section class="hero is-medium  is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    tan cerca que
+                </h1>
+                <h2 class="subtitle">
+                    se cierran tus ojos con mi sueño.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="grid-gallery">
+        <div class="images grid-gallery__item" *ngFor="let image of fotos7" (deferLoad)="image.show = true">
+
+            <ng-container *ngIf="image.show">
+                <img class="grid-gallery__image" src={{image.path}}>
+            </ng-container>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+<!-- <div class="grid-gallery">
+    <a class="grid-gallery__item" *ngFor="let foto of fotos">
+        <ngui-in-view>
+            <img  class="grid-gallery__image" *ngIf src="{{foto.path}}">
+        </ngui-in-view>
+    </a>
+</div>
+<div class="num-images">
+    Number of &lt;img> tag on document: {{numImages}}
+</div> -->
+<!-- <div class="collection">
+    <div class="collection-item" *ngFor="let foto of fotos">
+        <ngui-in-view>
+            <img  *ngIf src="{{foto.path}}">
+          </ngui-in-view>
+    </div>
+</div> -->

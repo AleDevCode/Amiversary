@@ -1,0 +1,20 @@
+<particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+
+<div class="card">
+    <div class="card-content" *ngFor="let versiculo of versiculoEscogido">
+        <p class="versiculo">
+            {{versiculo.texto}}
+        </p>
+        <br>
+        <p class="cita">
+            {{versiculo.cita}}
+        </p>
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">
+            <span>
+                <a  (click)="changeVersiculo()">CHANGE</a>
+            </span>
+        </p>
+    </footer>
+</div>

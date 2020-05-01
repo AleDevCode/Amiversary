@@ -1,0 +1,22 @@
+@font-face {
+  font-family: lexa;
+  src: url(assets/fonts/LexendDeca-Regular.ttf) format("opentype");
+}
+@font-face {
+  font-family: monserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf) format("opentype");
+}
+@font-face {
+  font-family: lightMonserrat;
+  src: url(assets/fonts/Montserrat-Light.ttf) format("opentype");
+}
+@font-face {
+  font-family: caveat;
+  src: url(assets/fonts/Caveat-Bold.ttf) format("opentype");
+}
+*body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "lexa";
+}
